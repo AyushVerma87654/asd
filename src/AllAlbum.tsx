@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import AlbumDisplay from "./AlbumDisplay";
+import Heading from "./Heading";
 
 type AllAlbumProps = {};
 
@@ -24,10 +25,13 @@ const AllAlbum: FC<AllAlbumProps> = () => {
   ]);
 
   return (
-    <div className="grid grid-cols-2 py-12">
-      {data.map((item) => (
-        <AlbumDisplay {...item} />
-      ))}
+    <div>
+      <Heading className="mt-8">All Album</Heading>
+      <div className="grid grid-cols-2 py-12">
+        {data.map((item) => (
+          <AlbumDisplay {...item} />
+        ))}
+      </div>
     </div>
   );
 };

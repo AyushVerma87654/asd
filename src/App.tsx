@@ -1,5 +1,6 @@
 import React from "react";
 import AllAlbum from "./AllAlbum";
+import BioPage from "./BioPage";
 import FirstPage from "./FirstPage";
 import LatestRelease from "./LatestRelease";
 import NavBar from "./NavBar";
@@ -11,6 +12,7 @@ const App = () => {
       <FirstPage />
       <LatestRelease />
       <AllAlbum />
+      <BioPage />
     </div>
   );
 };
